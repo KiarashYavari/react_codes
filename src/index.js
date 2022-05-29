@@ -25,9 +25,12 @@ const second_book = {
 }
 
 function BookList(){
-  return <Book src={first_book.src}
-  title={first_book.title} 
-  author={first_book.author} />;
+  return (
+    <section className="book-list">
+      <Book src={first_book.src} title={first_book.title} author={first_book.author} />
+      <Book src={second_book.src} title={second_book.title} author={second_book.author} />
+    </section>
+  );
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

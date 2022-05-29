@@ -7,11 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 .book{
   background-color: #f2f2f2;
   font-family: Sans-Serif;
@@ -24,4 +19,22 @@ code {
   height: 40vw;
   margin:5vw 20vw;
   border-radius: .6rem;
+}
+
+
+@media only screen and (min-width: 768px) { /* for desktop screen */
+  .book{
+    width: 15vw;
+    height: 15vw;
+  }
+  .book-img{
+    width: 7vw;
+    height: 7vw;
+    margin: 1vw 3.75vw;
+  }
+  .book-list{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 8;
+  }
 }
