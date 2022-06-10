@@ -24,9 +24,26 @@ body {
 
 @media only screen and (min-width: 768px) { /* for desktop screen */
   .book{
-    width: 15vw;
-    height: 15vw;
+    width: min-content;
+    height: auto;
+    font-family: inherit;
   }
+
+  .book h4{
+      margin: 1rem;
+      font-family: inherit;
+  }
+
+  .book h3{
+      margin: 1rem;
+      font-family: inherit;
+  }
+
+  .book p{
+      margin: 1rem;
+      font-family: inherit;
+  }
+
   .book-img{
     width: 7vw;
     height: 7vw;
@@ -34,7 +51,9 @@ body {
   }
   .book-list{
     display: flex;
-    grid-column-start: 1;
-    grid-column-end: 8;
+    /* grid-column-start: 1;
+    grid-column-end: 8; */
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
   }
 }
