@@ -4,31 +4,38 @@ import './index.css';
 
 
 function Book(props){
+  const {src, title, author} = props.book;
   return (
       <section className="book">
-           <img src={props.src} alt={props.title} className='book-img' />
-           <h3>{props.title}</h3>
-           <h4>{props.author}</h4>
+           <img src={src} alt={title} className='book-img' />
+           <h3>{title}</h3>
+           <h4>{author}</h4>
       </section>
   );
 }
-const first_book = {
-  'src':'https://m.media-amazon.com/images/I/51g0LdfhtvL.jpg', 
-  'title':'Goblet of fire',
-  'author':'J.K rowling'
-};
-
-const second_book = {
+const Books=[
+  {
+    'id':1,
+    'src':'https://m.media-amazon.com/images/I/51g0LdfhtvL.jpg', 
+    'title':'Goblet of fire',
+    'author':'J.K rowling'
+  },
+  {
+    'id':2,
     'src':'https://m.media-amazon.com/images/I/51SSiT9SH7L.jpg',
      'title': 'Secret wife',
      'author': 'Gill Paul'
-}
+  },
+
+]
+
 
 function BookList(){
   return (
     <section className="book-list">
-      <Book src={first_book.src} title={first_book.title} author={first_book.author} />
-      <Book src={second_book.src} title={second_book.title} author={second_book.author} />
+      {Books.map((book, id)=>{
+        return <Book key={book.id} book={book} />
+      })}
     </section>
   );
 }
