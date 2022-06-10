@@ -4,7 +4,7 @@ import './index.css';
 
 
 function Book(props){
-  const {src, title, author} = props.book;
+  const {src, title, author} = props;
   return (
       <section className="book">
            <img src={src} alt={title} className='book-img' />
@@ -13,6 +13,8 @@ function Book(props){
       </section>
   );
 }
+
+
 const Books=[
   {
     'id':1,
@@ -34,11 +36,12 @@ function BookList(){
   return (
     <section className="book-list">
       {Books.map((book, id)=>{
-        return <Book key={book.id} book={book} />
+        return <Book key={book.id} {...book} />
       })}
     </section>
   );
 }
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
