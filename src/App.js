@@ -1,9 +1,10 @@
+import UseStateExample from './UseStateExample';
 
 
 function App() {
   return (
     <div className="App">
-      Hello React!
+      <UseStateExample />
     </div>
   );
 }
