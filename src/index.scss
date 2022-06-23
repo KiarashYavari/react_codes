@@ -1,0 +1,16 @@
+body {
+  background-color:rgb(21, 19, 19);
+  color:antiquewhite;
+}
+
+$left-margin : 20vw;
+
+.use-state-title{
+  margin-top: 7vw ;
+  margin-left: $left-margin ;
+}
+
+.change-btn-title{
+  margin-top: 2vw;
+  margin-left: $left-margin;
+}
