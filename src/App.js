@@ -1,10 +1,10 @@
-import UseStateExample from './UseStateExample';
+import UseStateWithArray from './UseStateWithArray';
 
 
 function App() {
   return (
     <div className="App">
-      <UseStateExample />
+      <UseStateWithArray />
     </div>
   );
 }
