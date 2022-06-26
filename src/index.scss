@@ -3,14 +3,40 @@ body {
   color:antiquewhite;
 }
 
-$left-margin : 20vw;
+$left-margin : 24vw;
+
+.container{
+  margin-top: 7vw !important;
+}
 
 .use-state-title{
   margin-top: 7vw ;
   margin-left: $left-margin ;
 }
 
-.change-btn-title{
+%based-margins {
   margin-top: 2vw;
   margin-left: $left-margin;
 }
+
+.change-btn-title{
+  @extend %based-margins;
+}
+
+.names-list{
+  @extend %based-margins;
+  background-color: rgba(236, 255, 255, 0.461);
+  border-radius: 2rem;
+  width:max-content;
+  padding: 1rem;
+  display:flex;
+  gap:1vw;
+}
+
+#claer-data-btn{
+  @extend %based-margins;
+}
+
+// #list-remove-btn{
+  
+// }
