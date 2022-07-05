@@ -1,10 +1,10 @@
-import UseStateObj from './UseStateObj';
-
+import UseStateCounter from './UseStateCounter';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <UseStateObj />
+      <UseStateCounter />
     </div>
   );
 }

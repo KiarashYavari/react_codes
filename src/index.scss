@@ -37,6 +37,15 @@ $left-margin : 24vw;
   @extend %based-margins;
 }
 
-// #list-remove-btn{
-  
-// }
+#counter-btn{
+  @extend %based-margins;
+}
+
+#counter-title{
+  @extend %based-margins;
+}
+
+#counter-number{
+  margin-left:30vw;
+  margin-top: 0.5vw;
+}
