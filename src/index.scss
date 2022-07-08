@@ -37,13 +37,16 @@ $left-margin : 24vw;
   @extend %based-margins;
 }
 
+
 #counter-btn{
-  @extend %based-margins;
+  margin-top: 1rem;
+  margin-left:26vw; 
 }
 
 #counter-title{
   @extend %based-margins;
 }
+
 
 #counter-number{
   margin-left:30vw;

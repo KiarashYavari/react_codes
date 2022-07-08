@@ -12,7 +12,7 @@ body {
   margin-left: 24vw;
 }
 
-#counter-title, #counter-btn, #claer-data-btn, .names-list, .change-btn-title {
+#counter-title, #claer-data-btn, .names-list, .change-btn-title {
   margin-top: 2vw;
   margin-left: 24vw;
 }
@@ -24,6 +24,11 @@ body {
   padding: 1rem;
   display: flex;
   gap: 1vw;
+}
+
+#counter-btn {
+  margin-top: 1rem;
+  margin-left: 26vw;
 }
 
 #counter-number {
