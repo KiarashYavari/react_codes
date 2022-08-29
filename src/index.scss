@@ -52,3 +52,32 @@ $left-margin : 24vw;
   margin-left:30vw;
   margin-top: 0.5vw;
 }
+
+.profile-images{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1.5rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+.user-element{
+  background-color: bisque;
+  border-radius: 2rem;
+  color:black;
+  align-items: center;
+  margin: 2.5rem;
+  max-width: 10rem;
+  max-height: 9rem;
+}
+
+.git-name{
+  margin-left:1rem;
+}
+
+#git-title{
+  margin-left: 33rem;
+  font-size: 3rem;
+}
+
+
