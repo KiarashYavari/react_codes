@@ -1,10 +1,10 @@
-import UseEffectDependencyList from './UseEffectDependencyList';
+import UseEffectFetchData from './UseEffectFetchData';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <UseEffectDependencyList />
+      <UseEffectFetchData />
     </div>
   );
 }
