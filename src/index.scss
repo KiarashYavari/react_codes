@@ -80,4 +80,6 @@ $left-margin : 24vw;
   font-size: 3rem;
 }
 
-
+.mrt-heading2{
+  @extend %based-margins;
+}
