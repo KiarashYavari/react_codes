@@ -1,10 +1,10 @@
-import UseEffectFetchData from './UseEffectFetchData';
+import MultipleReturns from './MultipleReturns';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <UseEffectFetchData />
+      <MultipleReturns />
     </div>
   );
 }
