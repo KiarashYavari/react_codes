@@ -1,10 +1,10 @@
-import MultipleReturns from './MultipleReturns';
+import ShortCircuiting from './ShortCircuiting';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <MultipleReturns />
+      <ShortCircuiting />
     </div>
   );
 }
