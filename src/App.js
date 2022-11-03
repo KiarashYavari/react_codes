@@ -1,10 +1,10 @@
-import ShortCircuiting from './ShortCircuiting';
+import TernaryOperator from './TernaryOperator';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <ShortCircuiting />
+      <TernaryOperator />
     </div>
   );
 }
