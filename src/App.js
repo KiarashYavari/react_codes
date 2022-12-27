@@ -1,10 +1,10 @@
-import ShowHideComponents from './ShowHideComponents';
+import FormBasics from './FormBasics';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <ShowHideComponents />
+      <FormBasics />
     </div>
   );
 }
