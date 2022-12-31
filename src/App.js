@@ -1,10 +1,10 @@
-import FormBasics from './FormBasics';
+import MultipleInputs from './MultipleInputs';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <FormBasics />
+      <MultipleInputs />
     </div>
   );
 }
