@@ -1,10 +1,10 @@
-import MultipleInputs from './MultipleInputs';
+import UseRef from './UseRef';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <MultipleInputs />
+      <UseRef />
     </div>
   );
 }
