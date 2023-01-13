@@ -1,23 +1,27 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
+import '../index.css';
 import Home from './Home';
 import People from './People';
 import Person from './Person';
-import { Route, Router } from 'react-router-dom';
+import Error from './Error';
+import Navbar from './Navbar';
+import About from './About';
+import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const ReactRouterSetup = () =>{
-    return (<Router>
-        <Route exact path='/'>
-            <Home/>
-        </Route>
-        <Route exact path='/people/'>
-            <People/>
-        </Route>
-        <Route exact path='/person'>
-            <Person/>
-        </Route>
-
-    </Router>) 
+    return (
+    <Router>
+        <Navbar />
+        <Routes>
+            <Route exact path='/' element={<Home />}></Route>
+            <Route exact path='/people' element={<People />}></Route>
+            <Route exact path='/person' element={<Person />}></Route>
+            <Route exact path='/about' element={<About />}></Route>
+            <Route  path='*' element={<Error />}></Route>
+        </Routes>
+    </Router>
+    ) 
     
 }
+
+export default ReactRouterSetup;

@@ -63,4 +63,13 @@ body {
   font-size: 3rem;
 }
 
+.navbar-custom .navbar-nav .nav-link {
+  color: antiquewhite;
+}
+
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: pink;
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -83,3 +83,12 @@ $left-margin : 24vw;
 .mrt-heading2{
   @extend %based-margins;
 }
+
+.navbar-custom .navbar-nav .nav-link {
+  color: antiquewhite;
+}
+
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: pink;
+}
